@@ -4,7 +4,7 @@ require_once __DIR__ . '/init.php';
 
 // ถ้าเข้าแล้ว ไม่ต้องล็อกอินซ้ำ
 if (!empty($_SESSION['admin']) && in_array($_SESSION['admin']['role'] ?? '', ['admin','root'], true)) {
-  redirect('/lafs/admin_posts.php');
+  redirect('admin_posts.php/');
 }
 
 // เมื่อส่งฟอร์ม
